@@ -27,7 +27,6 @@ function App() {
         console.log(msg);
       });
 
-      setToDos([...toDos, toDo]);
       setTitle("");
       setDescription("");
     } catch (error) {
@@ -77,7 +76,7 @@ function App() {
                 toDoID={_id}
                 titleString={title}
                 descriptionString={description}
-                isDone={isDone}
+                isCompleted={isDone}
                 tasksParentRef={tasksParentRef}
                 x={x}
                 y={y}
