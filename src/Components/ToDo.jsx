@@ -61,7 +61,7 @@ const ToDo = ({
   const handleCheck = async () => {
     console.log(toDoID)
     try{
-        await axios.post(`https://drag-drop-to-do-backend.vercel.app/${isActive? "markundone": "markdone"}/${toDoID}`)
+        await axios.post(`https://drag-drop-to-do-backend.vercel.app/${isChecked? "markundone": "markdone"}/${toDoID}`)
                 .then((res) => {
                     const msg = res.data.message;
                     console.log(msg);
